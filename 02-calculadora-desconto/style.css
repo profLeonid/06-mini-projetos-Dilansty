@@ -109,6 +109,21 @@ button:hover {
   justify-content: center;
 }
 
+.resultado.normal{
+  border: 2px solid #14532d;
+  box-shadow: 0 0 8px #14532d;
+}
+
+.resultado.bom{
+  border: 2px solid #713f12;
+  box-shadow: 0 0 8px #713f12;
+}
+
+.resultado.otimo{
+  border: 2px solid #7f1d1d;
+  box-shadow: 0 0 8px #7f1d1d;
+}
+
 footer {
   display: flex;
   align-items: flex-end;
