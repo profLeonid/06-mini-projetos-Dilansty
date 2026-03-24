@@ -7,24 +7,24 @@ function removerClasses(){
     }
 
 function calcularDesconto(){
-    const precoOriginal = document.getElementById('preco-original')
-    const desconto = document.getElementById('desconto')
-    const resultado = document.getElementById('resultado')
+    const precoOriginal = document.getElementById('preco-original').value
+    const desconto = document.getElementById('desconto').value
+    let valorComDesconto
 
-    resultado = precoOriginal*(desconto/100)
+    valorComDesconto = precoOriginal * (1 - desconto/100)
 
     removerClasses()
 
     if(desconto > 0 && desconto <5.01){
-        resultado.textContent = (`O valor com desconto é: ${resultado}`)
+        resultado.textContent = (`O valor com desconto é: ${valorComDesconto}`)
         resultado.classList.add ('normal')
     }
     else if(desconto > 5 && desconto <10.01){
-        resultado.textContent = (`O valor com desconto é: ${resultado}`)
+        resultado.textContent = (`O valor com desconto é: ${valorComDesconto}`)
         resultado.classList.add ('bom')
     }else{
-        resultado.textContent = (`O valor com desconto é: ${resultado}`)
+        resultado.textContent = (`O valor com desconto é: ${valorComDesconto}`)
         resultado.classList.add ('otimo')
     }
-
+   
 }

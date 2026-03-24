@@ -57,9 +57,6 @@ Você deve criar um app que calcule a média de três notas.
   - Média entre 5 e 6.9: **"Recuperação"**
   - Média < 5: **"Reprovado"**
 - Cores do resultado:
-  - Aprovado → `#14532d`
-  - Recuperação → `#713f12`
-  - Reprovado → `#7f1d1d`
 
 ---
 
